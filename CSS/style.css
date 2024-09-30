@@ -1,0 +1,949 @@
+/* variables css */
+:root {
+    /* colors */
+    --hue-color:242;
+
+    /* HSL color mode */
+    --skin-color: hsl(351,68%,31%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 85%);
+    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --box-color: hsl(var(--hue-color),14%, 10%);
+    --scroll-bar-color: hsl(var(--hue-color),12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color),12%, 26%);
+
+    /* FONT AND TYPOGRAPHY */
+    --body-font:'poppins', sans-serif;
+
+}
+
+/* media queries */
+
+@media  screen and (max-width: 1250px) {
+.categoriesContainer {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+.categoriesContainer a {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.categoriesContainer a img {
+    width: 100%;
+}
+
+    .offersContainer {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media  screen and (max-width: 1250px) {
+    .pane {
+        flex:3 0 45.25vw !important;
+        /* height:100vh !important; */
+        gap: 5px !important;
+    }
+    
+    .pane img {
+        min-width: 42.25vw !important;
+        height:80vh !important;
+    }
+    .pane a {
+        /* color: black; */
+        font-size: 20px !important;
+    }
+}
+@media  screen and (max-width: 990px) {
+
+     .normalNav {
+        display: none !important;
+     }
+     .nav2 {
+        display: none;
+        position:absolute;
+        width: 250px;
+        height: 90vh !important;
+        flex-direction: column;
+        border-radius: 12.5px;
+     }
+    .nav-logo2 {
+        width: 41px !important;
+        display: flex !important;
+        position: absolute !important;
+    }
+    .nav-logo2-2 {
+        width: 41px;
+        /* display: none; */
+        position: absolute;
+        /* z-index: 999; */
+    }
+    
+    .nav-list2 {
+        height: 100%;
+        padding: 5rem 0;
+    }
+
+    .nav-list2 ul {
+        /* display: none; */
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .nav-list2 ul li {
+        padding: .7rem 0;
+        border-bottom: 1px solid grey;
+    }
+
+}
+@media  screen and (max-width: 730px) {
+    .categoriesContainer {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .offersContainer {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .pane {
+        width: 90vw;
+        flex:3 0 90vw !important;
+        /* height:100vh !important; */
+        gap: 5px !important;
+    }
+    
+    .pane img {
+        width: 500px !important;
+        height:85vh !important;
+    }
+    .pane a {
+        /* color: black; */
+        font-size: 20px !important;
+    }
+    .packsandfashion {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    
+}
+@media  screen and (max-width: 625px) {
+    .categoriesContainer {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+.nav-logo1 {
+    top: 10px;
+    display: flex !important;
+    position: absolute;
+}
+.nav-logo1 img {
+    padding: 5px;
+    width: 30px !important;
+}
+.nav-logo1-2 {
+    top: 10px;
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+.nav-logo1-2 img {
+    width: 45px;
+}
+.nav-list1 {
+    display: none;
+}
+.nav-list1Toggled {
+    display: none;
+    width: 100vw;
+    background-color: white;
+    height: 50px;
+}
+.nav-list1Toggled ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-list1Toggled ul a {
+    color: black;
+}
+.nav-list1Toggled ul a:hover {
+    color: var(--skin-color);
+    transition: .4s;
+    zoom: 110%;
+}
+
+
+
+}
+
+/* base  */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--body-font);
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+/* header */
+header {
+    max-width: 100vw;
+    background-color: white;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+header .intern-header {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85vw;
+    margin: auto;
+    text-align: center;
+    height: 3.34rem;
+    background: white;
+    top: 0;
+}
+
+.header-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: baseline;
+}
+.nav-logo1 {
+    display: none;
+}
+.nav-logo1 img {
+    width: 30px;
+}
+.nav-logo1-2 {
+    display: none;
+}
+.nav-logo1-2 img {
+    width: 30px;
+}
+.nav-list1Toggled {
+    display: none;
+}
+
+.nav-list1 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav-list1 a {
+    color: black;
+}
+.nav-list1 a:hover {
+    font-weight: 600;
+    color: var(--skin-color);
+    transition: .4s;
+}
+/* ////////// */
+.nav-logo2 {
+    width: 41px;
+    padding: 5px;
+    /* position: fixed; */
+    display: none;
+    justify-content: center;
+    align-items: baseline;
+    z-index: 999;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12.5px;
+}
+.nav-logo2 img {
+    width: 30px;
+}
+.nav-logo2-2 {
+    width: 41px;
+    padding: 5px;
+    display: none;
+    justify-content: center;
+    align-items: baseline;
+    z-index: 999;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12.5px;
+}
+.nav-logo2-2 img {
+    width: 30px;
+}
+/* .nav-logo2-2 {
+    display: none;
+} */
+.nav-list2 ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list2 a {
+    color: black;
+}
+li {
+    cursor: pointer;
+}
+.nav-list2 a:hover {
+    font-weight: 600;
+    color: var(--skin-color);
+    transition: .4s;
+}
+
+.logo-container {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+    /* display: flex; */
+    justify-content: center;
+    cursor: pointer;
+}
+.logo-container a {
+    color: black;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.icons img {
+    width: 1.1rem;
+    margin-left: .3rem;
+    cursor: pointer;
+}
+
+.nav2 {
+    /* position: relative; */
+    height: 3.4rem;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(96, 96, 96);
+}
+
+.nav2 li a {
+    color: black;
+}
+.nav2 li a:hover{
+    color: var(--skin-color);
+    font-weight: 600;
+    transition: .4s;
+}
+.nav2 span {
+    color: red;
+}
+/*  */
+.normalNav {
+    /* position: relative; */
+    height: 3.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(96, 96, 96);
+}
+.normalNav li a {
+    color: black;
+}
+.normalNav li a:hover{
+    color: var(--skin-color);
+    font-weight: 600;
+    transition: .4s;
+}
+.normalNav span {
+    color: red;
+}
+
+
+/* dropdown */
+
+.dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--title-color);
+    border: 1px solid rgb(180, 180, 180);
+    width: 100vw;
+    height: 3.4rem;
+    gap: 15px;
+    transition: opacity 0.7s ease-in-out;
+}
+.dropdown a {
+    color: black;
+}
+.dropdown a:hover {
+    color: var(--skin-color);
+    transition: .4s;
+    font-weight: 600;
+}
+.clothingDropdown:hover .dropdown {
+    display: flex;
+    opacity: 1;
+}
+.clothingDropdown:not(:hover) .dropdown {
+    opacity: 0;
+}
+
+/* ///////////////// */
+body {
+    background-color: rgb(235, 235, 235);
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* search section  */
+
+.hidden {
+    display: flex;
+}
+#searchSection {
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 2rem; */
+    /* transform: translate(-50%, -50%); */
+    height: 4rem;
+    width: 100vw;
+    border-bottom: 1px solid rgb(134, 134, 134);
+}
+
+#searchSection input {
+    width: 44vw;
+    height: 2.5rem;
+    font-size: var(--h3-font-size);
+}
+
+#searchSection button {
+    background-color: rgb(179, 179, 179);
+    margin-left: .2rem;
+    height: 2.5rem;
+    width: 4rem;
+    font-size: 20px;
+}
+
+/* Main page */
+.men {
+    width: 100vw;
+}
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 85.25vh; */
+    height: 100vh;
+    background-image: url(../Images/landing\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.mainContent {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 320px;
+    /* position: absolute; */
+}
+
+.mainContent h1 {
+    font-size: var(--h1-font-size);
+}
+
+.mainContent a {
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+}
+.mainContent p {
+    font-size: var(--h3-font-size);
+    font-weight:200;
+}
+
+/* //////////////// */
+
+.categoriesSection {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-items: center; */
+}
+.categoriesSection h2 {
+    margin: 0 auto;
+    padding: 6rem 0 3.5rem;
+    font-size: var(--h2-font-size);
+    font-weight:300;
+}
+.categoriesContainer {
+    width: 90.5vw;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+.categoriesContainer a:hover {
+    opacity: 90%;
+}
+.categoriesContainer img {
+    width: 15vw;
+}
+.categoriesContainer h3 {
+    color: black;
+}
+.categoriesContainer h3:hover {
+    color: var(--skin-color);
+    transition: .4s;
+}
+
+/* OffersContainer */
+.offersContainer {
+    margin: 0 auto;
+    width: 90.5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-direction: row; */
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 auto;
+    gap: 5px;
+    min-height: 100vh;
+}
+
+.flexOffer {
+    /* width: 30vw; */
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flexOffer:hover {
+    opacity: 90%;
+}
+.flexOffer h2 {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight:300;
+}
+.flexOffer a {
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+}
+.flexOffer a:hover {
+    background-color: rgb(192, 192, 192);
+    transition: .4s;
+}
+.newArrivals {
+    background-image: url(../Images/Models/new-arrivals.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bestSellers {
+    background-image: url(../Images/Models/best-sellers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.theHolidayOutfit {
+    background-image: url(../Images/Models/holiday_outfit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Latest Impacts */
+
+.impacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 6rem 0 3.5rem;
+}
+
+.latestImpact {
+    /* background-color: grey; */
+    background-image: url(../Images/CleanWoods.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90.5vw;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-color);
+}
+
+.latestImpact h2 {
+    font-size: var(--h2-font-size);
+    font-weight:300;
+}
+.latestImpact a {
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+}
+.latestImpact a:hover {
+    background-color: rgb(192, 192, 192);
+    transition: .4s;
+}
+.latestImpact:hover {
+    opacity: 90%;
+}
+
+/* Everlane favourites */
+
+body{
+    overflow-x:hidden;
+}
+.fav-outfits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0 3.5rem;
+}
+.fav-outfits h2 {
+    padding: 2rem 0 1rem;
+    font-size: var(--h2-font-size);
+    font-weight:300;
+}
+.gal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#page {
+    overflow:hidden;
+    white-space:nowrap;
+    position: relative;
+    background-color:transparent;
+    display:flex;
+    flex-wrap:no-wrap;
+    align-items: center;
+    width: 90.5vw;
+    height: 100vh;
+    gap: 5px;
+    margin-bottom: 3.5rem;
+}
+.pane {
+    flex:0 0 22.6vw;
+    height:75vh;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.pane img {
+    width: 22.6vw;
+}
+.pane a {
+    color: black;
+    font-size: 10px;
+}
+  
+.pane:nth-child(4n+2)  {
+    background-color: transparent;
+}
+.pane:nth-child(4n+3)  {
+    background-color: transparent;
+}
+.pane:nth-child(4n+4)  {
+    background-color: transparent;
+}
+.pane:last-child {
+    background-color: transparent;
+}
+
+button {
+    background-color: black;
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+    width: 30px;
+}
+
+/* packs */
+
+.packs {
+    width: 90.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5rem 0 3.5rem;
+    margin: 0 auto;
+
+}
+
+.packsandfashion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    /* flex-direction: row;
+    justify-content: center;
+    max-width: 70vw; */
+    gap: 3rem;
+}
+.packsandfashion img {
+    width: 100%;
+}
+.pack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pack h2 {
+    margin: 1.5rem 0 1.5rem;
+    font-size: var(--h2-font-size);
+    font-weight:300;
+}
+.pack h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.pack a {
+    text-decoration: none;
+    color: black;
+}
+.pack a:hover {
+    text-decoration: underline;
+    color: var(--skin-color);
+    cursor: pointer;
+    transition: .3s;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* Clothes page */
+
+.itemTypeSection {
+    padding: 6rem 0 3.5rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.itemTypeSection a {
+    color: black;
+}
+#aaa:hover {
+    color: var(--skin-color);
+    transition: .4s;
+}
+
+.itemType {
+    padding: 2rem 0 0;
+    width: 90.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.itemInfo {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.itemInfo:hover {
+    transform: scale(1.03);
+}
+.itemInfo img {
+    width: 100%;
+}
+.itemInfo a {
+    color: black;
+    padding: 10px 0 5px;
+    display: flex;
+    justify-content: center;
+}
+.itemInfo h2 {
+    font-weight: 300;
+}
+.itemInfo a:hover {
+    color: var(--skin-color);
+    transition: .4s;
+}
+.itemInfo h3 {
+    padding: 5px 0 10px;
+}
+#tshirtLevi img:hover {
+    content: url(../Images/Items/T-shirts/levi.jpg);
+    transition: transform .4s ease-in-out;
+}
+#tshirtLuffy img:hover {
+    content: url(../Images/Items/T-shirts/OnePiece.jpg);
+    transition: transform .4s ease-in-out;
+}
+#tshirtKyojuro img:hover {
+    content: url(../Images/Items/T-shirts/RengokuKyojuro1.jpg);
+    transition: transform .4s ease-in-out;
+}
+#tshirtGiyu img:hover {
+    content: url(../Images/Items/T-shirts/tomiokaGiyu1.jpg);
+    transition: transform .4s ease-in-out;
+}
+
+#capucheBlack img:hover {
+    content: url(../Images/Items/SweatShirts/Sweat\ basic\ capuche-black.jpg);
+    transition: transform .4s ease-in-out;
+}
+#capuche img:hover {
+    content: url(../Images/Items/SweatShirts/Sweat\ basic\ capuche.jpg);
+    transition: transform .4s ease-in-out;
+}
+#fraise img:hover {
+    content: url(../Images/Items/SweatShirts/Sweat\ à\ capuche\ STWD\ fraises0.jpg);
+    transition: transform .4s ease-in-out;
+}
+#stwd img:hover {
+    content: url(../Images/Items/SweatShirts/Sweat\ à\ capuche\ STWD.jpg);
+    transition: transform .4s ease-in-out;
+}
+
+/* jeans */
+
+#baggyBlue img:hover {
+    content: url(../Images/Items/Jeans/jean\ baggy\ blue.jpg);
+    transition: transform .4s ease-in-out;
+}
+#baggyGrey img:hover {
+    content: url(../Images/Items/Jeans/jean\ baggy\ grey.jpg);
+    transition: transform .4s ease-in-out;
+}
+#jeanSkate img:hover {
+    content: url(../Images/Items/Jeans/jean\ skate.jpg);
+    transition: transform .4s ease-in-out;
+}
+#jeanStandard img:hover {
+    content: url(../Images/Items/Jeans/jean\ standard.jpg);
+    transition: transform .4s ease-in-out;
+}
+/* pants */
+
+#tayloring img:hover {
+    content: url(../Images/Items/Pants/Pantalon\ baggy\ tailoring.jpg);
+    transition: transform .4s ease-in-out;
+}
+#pinces img:hover {
+    content: url(../Images/Items/Pants/Pantalon\ habillé\ pinces.jpg);
+    transition: transform .4s ease-in-out;
+}
+#darkLarge img:hover {
+    content: url(../Images/Items/Pants/Pantalon\ tailoring\ large\ darkBrown.jpg);
+    transition: transform .4s ease-in-out;
+}
+#tailoringLarge img:hover {
+    content: url(../Images/Items/Pants/Pantalon\ tailoring\ large.jpg);
+    transition: transform .4s ease-in-out;
+}
+/* jackets */
+
+#coupeVent img:hover {
+    content: url(../Images/Items/Jackets/Coupe-vent\ léger.jpg);
+    transition: transform .4s ease-in-out;
+}
+#matelasséSTWD img:hover {
+    content: url(../Images/Items/Jackets/Gilet\ matelassé\ STWD.jpg);
+    transition: transform .4s ease-in-out;
+}
+#légèreCropped img:hover {
+    content: url(../Images/Items/Jackets/Veste\ légère\ cropped.jpg);
+    transition: transform .4s ease-in-out;
+}
+#matelasséeL img:hover {
+    content: url(../Images/Items/Jackets/Veste\ matelassée\ légère\ à\ capuche.jpg);
+    transition: transform .4s ease-in-out;
+}
+/* shirts */
+
+#STWDchien img:hover {
+    content: url(../Images/Items/Shirts/doubles\ manches\ STWD\ chien.jpg);
+    transition: transform .4s ease-in-out;
+}
+#STWDdéchiré img:hover {
+    content: url(../Images/Items/Shirts/Pull\ STWD\ déchiré.jpg);
+    transition: transform .4s ease-in-out;
+}
+#pullSilhouettes img:hover {
+    content: url(../Images/Items/Shirts/Pull\ STWD\ silhouettes.jpg);
+    transition: transform .4s ease-in-out;
+}
+#STWDsilhouettes img:hover {
+    content: url(../Images/Items/Shirts/STWD\ silhouettes.jpg);
+    transition: transform .4s ease-in-out;
+}
+/* shorts */
+
+#BermudaBattle img:hover {
+    content: url(../Images/Items/Shorts/Bermuda\ battle.jpg);
+    transition: transform .4s ease-in-out;
+}
+#BermudaInterlock img:hover {
+    content: url(../Images/Items/Shorts/Bermuda\ jogging\ interlock.jpg);
+    transition: transform .4s ease-in-out;
+}
+#piquéBasique img:hover {
+    content: url(../Images/Items/Shorts/jogging\ piqué\ basique.jpg);
+    transition: transform .4s ease-in-out;
+}
+#ShortDenimBaggy img:hover {
+    content: url(../Images/Items/Shorts/Short\ denim\ baggy.jpg);
+    transition: transform .4s ease-in-out;
+}
+
+
+
+
+
+/* ///////////////////////// */
+/* footer */
+footer {
+    font-weight: 250;
+    padding: 1rem 0 1rem;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+
+.tshirts {
+    /* display: none; */
+}

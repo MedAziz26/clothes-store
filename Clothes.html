@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========SWIPER CSS======= -->
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- =======MAIN CSS======= -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>ELEGANCE | Clothes</title>
+</head>
+<body>
+    <header>
+        <div class="intern-header">
+            <div class="nav1  header-item">
+                <div class="nav-logo1">||</div>
+                <div class="nav-logo1-2">X</div>
+                <div class="nav-list1">
+                    <ul>
+                        <a href="#"><li class="nav-item">Men</li></a>
+                        <a href="#"><li class="nav-item">Women</li></a>
+                        <a href="#"><li class="nav-item">Trends</li></a>
+                        <a href="#"><li class="nav-item">About</li></a>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="logo-container header-item"><a href="./main.html">ELEGANCE</a></div>
+    
+            <div class="icons-container header-item">
+                <div class="icons">
+                    <a href="#" id="searchButton"><img src="./Images/searchLogo.png" alt="Search"></a>
+                    <a href="#"><img src="./Images/user.png" alt="Search"></a>
+                    <a href="#"><img src="./Images/shopping-cart.png" alt="Search"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 2ND NAVIGATION -->
+    <div class="normalNav">
+        <div class="nav-list2">
+            <ul>
+                <li class="nav-item"><a href="#"><span>Promotions</span></a></li>
+                <li class="nav-item clothingDropdown"><a href="./Clothes.html">Clothing</a></li>
+                <li class="nav-item"><a href="#">New arrivals</a></li>
+                <li class="nav-item"><a href="#">Best sellers</a></li>
+                <li class="nav-item"><a href="#">Shoes</a></li>
+                <li class="nav-item"><a href="#">Accessories</a></li>
+                <li class="nav-item"><a href="#">Bags & Backbags</a></li>
+                <li class="nav-item"><a href="#">Collaborations</a></li>
+                <li class="nav-item"><a href="#"><span>Sale</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ////////// -->
+    <div class="nav-logo2"><img src="./Images/menu.png" alt=""></div>
+    <div class="nav-logo2-2"><img src="./Images/arrow.png" alt=""></div>
+    <div class="nav2">
+        <div class="nav-list2">
+            <ul>
+                <li class="nav-item"><a href="#"><span>Promotions</span></a></li>
+                <li class="nav-item clothingDropdown"><a href="./Clothes.html">Clothing</a></li>
+                <li class="nav-item"><a href="#">New arrivals</a></li>
+                <li class="nav-item"><a href="#">Best sellers</a></li>
+                <li class="nav-item"><a href="#">Shoes</a></li>
+                <li class="nav-item"><a href="#">Accessories</a></li>
+                <li class="nav-item"><a href="#">Bags & Backbags</a></li>
+                <li class="nav-item"><a href="#">Collaborations</a></li>
+                <li class="nav-item"><a href="#"><span>Sale</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 3rd navigation -->
+    <ul class="dropdown">
+        <li class="sub-item" id="Tshirts"><a href="#" onclick="loadTShirts()">T-shirts</a></li>
+        <li class="sub-item"><a href="#" onclick="loadSweatShirts()">Sweatshirts</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Jeans</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Pants</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Jackets & Vests</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Outerwear</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Shirts</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Shorts</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Tracksuits</a></li>
+        <li class="sub-item"><a href="#" onclick="loadTShirts()">Sweaters & Cardigans</a></li>
+    </ul>
+    <!-- Search section  -->
+    <div id="searchSection" class="hidden">
+        <input type="text" placeholder="Search...">
+        <button>Go</button>
+    </div>
+<!-- --------------------------items page------------------------------- -->
+
+    <section class="tshirtsSec itemTypeSection">
+        <h1>T-shirts</h1>
+        <div class="tshirtsSection itemType">
+                <div class="itemInfo" id="tshirtLevi">
+                    <a href="#"><img src="./Images/Items/T-shirts/levi1.jpg" alt="t-shirt levi"></a>
+                    <a href="#"><h2>T-shirt Levi Ackerman</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="tshirtGiyu">
+                    <a href="#"><img src="./Images/Items/T-shirts/tomiokaGiyu0.jpg" alt="t-shirt giyu"></a>
+                    <a href="#"><h2>T-shirt Tomioka Giyu</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="tshirtKyojuro">
+                    <a href="#"><img src="./Images/Items/T-shirts/RengokuKyojuro2.jpg" alt="t-shirt rengoku"></a>
+                    <a href="#"><h2>T-shirt Rengoku Kyojuro</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="tshirtLuffy">
+                    <a href="#"><img src="./Images/Items/T-shirts/OnePiece0.jpg" alt="t-shirt lufi gear5"></a>
+                    <a href="#"><h2>T-shirt Luffy</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+        </div>
+        <a id="aaa" href="#">See more...</a>
+    </section>
+    <!--  -->
+    <section class="sweatshirtsSection itemTypeSection">
+        <h1>Sweat Shirts</h1>
+        <div class="sweatShirts itemType">
+                <div class="itemInfo" id="capucheBlack">
+                    <a href="#"><img src="./Images/Items/SweatShirts/Sweat basic capuche-black1.jpg" alt=""></a>
+                    <a href="#"><h2>Basic hooded sweatshirt</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="capuche">
+                    <a href="#"><img src="./Images/Items/SweatShirts/Sweat basic capuche1.jpg" alt=""></a>
+                    <a href="#"><h2>Basic hooded sweatshirt</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="fraise">
+                    <a href="#"><img src="./Images/Items/SweatShirts/Sweat à capuche STWD fraises1.jpg" alt=""></a>
+                    <a href="#"><h2>STWD Strawberry Hoodie</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="stwd">
+                    <a href="#"><img src="./Images/Items/SweatShirts/Sweat à capuche STWD1.jpg" alt=""></a>
+                    <a href="#"><h2>STWD Hoodie</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+        </div>
+        <a id="aaa" href="#">See more...</a>
+    </section>
+    <!--  -->
+    <section class="jeansSection itemTypeSection">
+        <h1>Jeans</h1>
+        <div class="jeans itemType">
+                <div class="itemInfo" id="baggyBlue">
+                    <a href="#"><img src="./Images/Items/Jeans/jean baggy blue0.jpg" alt=""></a>
+                    <a href="#"><h2>jean baggy blue</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="jeanSkate">
+                    <a href="#"><img src="./Images/Items/Jeans/jean skate1.jpg" alt=""></a>
+                    <a href="#"><h2>jean skate</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="jeanStandard">
+                    <a href="#"><img src="./Images/Items/Jeans/jean standard0.jpg" alt=""></a>
+                    <a href="#"><h2>jean standard</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="baggyGrey">
+                    <a href="#"><img src="./Images/Items/Jeans/jean baggy grey0.jpg" alt=""></a>
+                    <a href="#"><h2>jean baggy grey</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+        </div>
+        <a id="aaa" href="#">See more...</a>
+    </section>
+    <!--  -->
+    <section class="pantsSection itemTypeSection">
+        <h1>Pants</h1>
+        <div class="pants itemType">
+                <div class="itemInfo" id="tayloring">
+                    <a href="#"><img src="./Images/Items/Pants/Pantalon baggy tailoring0.jpg" alt=""></a>
+                    <a href="#"><h2>Baggy tailoring</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="pinces">
+                    <a href="#"><img src="./Images/Items/Pants/Pantalon habillé pinces0.jpg" alt=""></a>
+                    <a href="#"><h2>Habillé pinces</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="darkLarge">
+                    <a href="#"><img src="./Images/Items/Pants/Pantalon tailoring large darkBrown0.jpg" alt=""></a>
+                    <a href="#"><h2>Tailoring large</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="tailoringLarge">
+                    <a href="#"><img src="./Images/Items/Pants/Pantalon tailoring large0.jpg" alt=""></a>
+                    <a href="#"><h2>Tailoring large</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+        </div>
+        <a id="aaa" href="#">See more...</a>
+    </section>
+    <!--  -->
+    <section class="jacketsSection itemTypeSection">
+        <h1>Jackets</h1>
+        <div class="jackets itemType">
+                <div class="itemInfo" id="coupeVent">
+                    <a href="#"><img src="./Images/Items/Jackets/Coupe-vent léger0.jpg" alt=""></a>
+                    <a href="#"><h2>Coupe-vent léger</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="matelasséSTWD">
+                    <a href="#"><img src="./Images/Items/Jackets/Gilet matelassé STWD0.jpg" alt=""></a>
+                    <a href="#"><h2>Gilet matelassé STWD</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="légèreCropped">
+                    <a href="#"><img src="./Images/Items/Jackets/Veste légère cropped0.jpg" alt=""></a>
+                    <a href="#"><h2>Veste légère cropped</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="matelasséeL">
+                    <a href="#"><img src="./Images/Items/Jackets/Veste matelassée légère à capuche0.jpg" alt=""></a>
+                    <a href="#"><h2>Matelassée à capuche</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+        </div>
+        <a id="aaa" href="#">See more...</a>
+    </section>
+    <!--  -->
+    <section class="shirtsSection itemTypeSection">
+        <h1>Shirts</h1>
+        <div class="shirts itemType">
+                <div class="itemInfo" id="STWDsilhouettes">
+                    <a href="#"><img src="./Images/Items/Shirts/STWD silhouettes0.jpg" alt=""></a>
+                    <a href="#"><h2>Tailoring large</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="STWDchien">
+                    <a href="#"><img src="./Images/Items/Shirts/doubles manches STWD chien0.jpg" alt=""></a>
+                    <a href="#"><h2>Coupe-vent léger</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="STWDdéchiré">
+                    <a href="#"><img src="./Images/Items/Shirts/Pull STWD déchiré0.jpg" alt=""></a>
+                    <a href="#"><h2>Gilet matelassé STWD</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="pullSilhouettes">
+                    <a href="#"><img src="./Images/Items/Shirts/Pull STWD silhouettes0.jpg" alt=""></a>
+                    <a href="#"><h2>Veste légère cropped</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+        </div>
+        <a id="aaa" href="#">See more...</a>
+    </section>
+    <!--  -->
+    <section class="shortsSection itemTypeSection">
+        <h1>Shorts</h1>
+        <div class="shorts itemType">
+                <div class="itemInfo" id="BermudaBattle">
+                    <a href="#"><img src="./Images/Items/Shorts/Bermuda battle0.jpg" alt=""></a>
+                    <a href="#"><h2>Bermuda battle</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="BermudaInterlock">
+                    <a href="#"><img src="./Images/Items/Shorts/Bermuda jogging interlock0.jpg" alt=""></a>
+                    <a href="#"><h2>Bermuda jogging interlock</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="piquéBasique">
+                    <a href="#"><img src="./Images/Items/Shorts/jogging piqué basique0.jpg" alt=""></a>
+                    <a href="#"><h2>Jogging piqué basique</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+                <div class="itemInfo" id="ShortDenimBaggy">
+                    <a href="#"><img src="./Images/Items/Shorts/Short denim baggy0.jpg" alt=""></a>
+                    <a href="#"><h2>Short denim baggy</h2></a>
+                    <h3>$ 22.99</h3>
+                </div>
+        </div>
+        <a id="aaa" href="#">See more...</a>
+    </section>
+    <!-- footer -->
+<center>
+    <footer>
+        <h3>Thanks for visiting!</h3>
+        <h5>ELEGANCE - Step & Shine</h5>
+    </footer>
+</center>
+<script src="./JS/main.js"></script>
+<script src="./JS/allProducts.js"></script>
+</body>
+</html>
